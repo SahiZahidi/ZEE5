@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zee5-Home</title>
+    <link rel="preload" href="/fonts/glyph/Icons_InitialLoad.woff2?version=2.51.65" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="/fonts/glyph/Icons_Other.woff2?version=2.51.65" as="font" type="font/woff2" crossorigin="">
+    <script src="https://kit.fontawesome.com/861512847d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/03120bbf35.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+* body {
+        font-family: NotoSansRegular,sans-serif;
+        background:#0f0617;
+    
+}
+
+#topmost {
+display:flex;
+flex-wrap: right;
+justify-content: space-between;
+background:#0f0617;
+color:#fff;
+margin-top:20px;
+margin-right:20px;
+margin-left:20px;
+}
+
+#logo1 {
+height:45px;
+width:45px;
+margin-top:-10px;
+margin-right: 10px;
+}
+
+#navbar1 {
+display: flex;
+width:800px;
+margin-top: 10px;
+line-height: 30px;
+font-size: 14px;
+gap:15px;
+      
+}
+
+#icn2 {
+margin-top: 8px;
+size: 14px;
+cursor: pointer;
+}
+    
+#navbar2 {
+display: flex;
+gap: 30px;
+margin-bottom:10px;
+margin-top:5px;
+font-size: 20px;
+}
+
+#login {
+border:1px solid white;
+border-radius: 5px;
+font-weight: 700;
+font-size: 12px;
+padding: 10px 8px 10px 8px;
+cursor: pointer;
+        
+}
+
+#buy {
+border-radius: 5px;
+font-weight: 700;
+font-size: 12px;
+background-color: #8230c6;
+padding: 10px 8px 10px 8px;
+cursor: pointer;
+
+}
+
+
+.list-choice-objects input[type="radio"] {
+position:relative;
+left:-9999px;
+border-radius: 5px;
+
+}
+
+.list-choice-objects1 input[type="radio"] {
+position:relative;
+left:-9999px; 
+border-radius: 5px;
+
+}
+
+.list-choice-title {
+
+display: inline-block;
+position: relative;
+background:none;
+text-align: left;
+padding: 0px 10px 0px 10px;
+color:rgb(229, 229, 229);
+text-shadow: none ;
+box-sizing: border-box solid;
+cursor: pointer;
+
+}
+
+
+
+
+
+.list-choice-objects input[type="radio"] + span {
+color: rgb(255, 255, 255);
+padding: 5px 8px 5px 8px;
+display: flex;
+text-align: left;
+cursor: pointer;
+width: 100%;
+margin-bottom: 10px;
+margin-left: 10px;
+margin-right: 10px;
+box-sizing: border-box solid;
+
+}
+
+
+.list-choice-objects1 input[type="radio"] + span {
+color: rgb(255, 255, 255);
+width:200px;
+padding: 5px 8px 5px 8px;
+display: flex;
+text-align:  left;
+cursor: pointer;
+margin-top: -10px;
+margin-left: 10px;
+margin-right: 10px;
+box-sizing: border-box solid;
+
+}
+
+.list-choice-objects {
+display:flex;
+gap: 30px;
+position:absolute;
+font-size:12px;
+font-weight: 100;
+
+overflow:hidden;
+max-height: 0;
+transition: all 250ms ease;
+box-sizing: border-box solid;
+
+}
+
+
+.list-choice-objects1 {
+display:block;
+position:absolute;
+font-size:12px;
+font-weight: 600;
+overflow:hidden;
+max-height: 0;
+transition: all 250ms ease;
+box-sizing: border-box solid;
+
+}
+
+
+
+
+.drop {
+display:grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: auto;
+gap:5px;
+margin-top:25px;
+    
+}
+
+.drop > img{
+
+border-radius: 5px;
+height:100px;
+width:164px;
+cursor: pointer;
+
+}
+
+
+.list-choice-title:hover {
+color: #fff;
+border-bottom: 4px solid #fff;
+
+}
+
+
+.list-choice:hover .list-choice-objects  input[type="radio"] + span {
+
+transition: all 250ms ease-in-out;
+
+}
+
+
+.list-choice:hover .list-choice-objects1  input[type="radio"] + span {
+
+transition: all 250ms ease-in-out;
+
+}
+
+.list-choice-objects input[type="radio"] + span:hover {
+background:#372a42;
+border-radius: 5px 5px 5px 5px;
+
+}
+
+.list-choice-objects1 input[type="radio"] + span:hover {
+background:#372a42;
+border-radius: 5px 5px 5px 5px;
+
+}
+
+.list-choice:hover input[type="radio"]:checked + span:hover {
+background:none;
+
+}
+
+.list-choice input[type="radio"]:checked + span {
+background: none;
+
+
+}
+
+
+.list-choice:hover .list-choice-objects {
+max-height: 540px;
+border: 1px solid #372a42;
+
+}
+
+
+.list-choice:hover .list-choice-objects1 {
+max-height: 540px;
+border: 1px solid #372a42;
+
+}
+
+
+
+</style>
+<body>
+    <!-- ==================================================== Header ================================================= -->
+
+    <div id="topmost" >
+       <div id="navbar1" >
+        <img id="logo1" src="https://www.zee5.com/images/ZEE5_logo.svg?ver=2.51.65">
+        <!-- <div id="home"> Home</div> -->
+        <div class="list-choice">
+            <div class ="list-choice-title"> Home</div>  
+        </div>
+        <!-- <div id="Tvshows"> TV Shows</div> -->
+        <div class="list-choice">
+            <div class ="list-choice-title"> TV Shows</div>
+            <div class ="list-choice-objects">
+            <div>
+            <label>
+            <input type="radio"/>
+            <span>Top Hindi Shows</span>
+            
+            </label>
+            <label>
+            <input type="radio"/>
+            <span>Top Bhojpuri Shows</span>
+            </label>
+            <label>
+            <input type="radio"/>
+            <span>Zee Ganga Shows</span>
+            </label>
+            <label>
+            <input type="radio"/>
+            <span>Latest On Zee5</span>
+            </label>
+            </div>
+            <div class="drop">
+             <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-6-4z5101301/list/1170x658withlogo6fd9893dfd424b5795bee529b24e5b79.jpg">
+             <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-6-3510/list/1170x658withlogodfbf79d181ea44b1a40ea806f260e414.jpg">
+             <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-6-4z525220/list/1170x658withlogo786c0a8f966c472e92106faa86b87e60.jpg">
+             <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-6-4z525220/list/1170x658withlogo786c0a8f966c472e92106faa86b87e60.jpg">
+             <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-6-127/list/1170x658withlogo6cbcd0cb17a147ceb6d938ce2cca54f2.jpg">
+             <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-6-366/list/1170x658withlogo759cb1985ac14d279a10352566e46681.jpg">
+             <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-6-3392/list/1170x658withlogob168fa3c7f9c427ba6b10f6e869aa3cf.jpg">
+             <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-6-4z587441/list/1170x658withlogo7f8296111baa4ad0bfa1715cd4e16b5e.jpg">
+             <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-6-4z546884/list/1170x658withlogo5f48212c650a4ac0b89bffc468e372ae.jpg">
+            </div>
+            </div>
+        </div>
+        <!-- <div id="movies"> Movies </div> -->
+        <div class="list-choice">
+            <div class ="list-choice-title"> Movies </div>
+            <div class ="list-choice-objects">
+                <div>
+            <label>
+               <input type="radio"/>
+               <span>Latest Movies on Zee5</span>
+            </label>
+            <label>
+                <input type="radio"/>
+                <span>500+ Free Movies </span>
+             </label>
+             <label>
+                <input type="radio"/>
+                <span>Popular Movie on Zee5</span>
+             </label>
+             <label>
+                <input type="radio"/>
+                <span>Bhojpuri Movies Mania</span>
+             </label>
+            </div>
+            <div class="drop">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-0-1z5133458/list/1170x658withlogo39e9b67c713e4044a52d5131b6ccd535351614f22f2b4b71b1c6212b4866e89a.jpg">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-0-1z5146416/list/1170x658withlogo7d3b23a5bbeb483298901769ba1e97bb.jpg">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-0-1z5148935/list/1170x658withlogoa3d2b3e5b73746dbbfb0963ba7738663da370e0073214a23a9dcc9b933ccbad5.jpg">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-101-10z5145273/list/rrrp51170x65858cd2ed348524591acd49db416704e37.jpg">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-0-1z5149852/list/1170x658withlogo09d5af217df844a09c0889a61a6c6f4c.jpg">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-0-1z5161064/list/1170x658withlogoc78fbb8c08ee4055a2574f7d6eeb3f26.jpg">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-0-1z5133622/list/1170x658withlogof994f29250bc49d1b5c4b7d8df445480.jpg">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-0-1z5145103/list/1170x658withlogo5b18fb5da683450b82714d741dcfa67b.jpg">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-0-1z5117565/list/1170x658withlogoba5a5ff7bf02437a8a55d37319eb384b.jpg">
+
+            </div>
+            </div>
+        </div>
+        <!-- <div id="webseries"> Web Series</div> -->
+        <div class="list-choice">
+            <div class ="list-choice-title"> Web Series</div>
+
+        </div>
+        <!-- <div id="news">News</div> -->
+        <div class="list-choice">
+            <div class ="list-choice-title"> News </div>
+            <div class ="list-choice-objects">
+                <div>
+                <label>
+                    <input type="radio"/>
+                    <span>Free Live News Channels</span>
+                 </label>
+                 <label>
+                    <input type="radio"/>
+                    <span>HEADLINES</span>
+                 </label>
+                 <label>
+                    <input type="radio"/>
+                    <span>SHOWBIZ</span>
+                 </label>
+                 <label>
+                    <input type="radio"/>
+                    <span>Around the Globe</span>
+                 </label>
+                </div>
+                <div class="drop">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-9-aajtak/list/aajtak1170c5f0b30a23f8405f9e4e05691ee3e6f2.jpg">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-9-zeenews/list/zeenews11701f0a8d3030bbd46e195a8fd0e9a61f203.jpg">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-9-indiatoday/list/indiatodayrajeevsardesdai1170fa2bd800092a4d5c990afa2364e6015d.jpg">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-9-404/list/abpsanjha1170e043143edf5f4fa3be291347ddd15311.jpg">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-9-zeebusiness/list/zeebusiness117070a1a621ebfe49689982517efaa02515.jpg">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-9-wion/list/wion1170223a59d8083a401ebf8dd9b21f7f2013b925bd095eb04dd58b790c6593b5f4b9.jpg">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-9-398/list/abpnewssumitawasthi2117036defc5b181b4a25a143034a06b591e5.jpg">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-9-274/list/indianewspunjabhimachal1170c83368ea85274c9984dfbb31a8d9619b.jpg">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-9-zeepunjabharyanahima/list/zphh14405b673f1d0f8a43969c82a3c67dff3dad.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="list-choice">
+            <div class ="list-choice-title"> <i class="fa-solid fa-grip"></i> </div>
+            <div class ="list-choice-objects1">
+           
+            <label>
+               <input type="radio"/>
+               <span>Eduauraa</span>
+            </label>
+            <label>
+                <input type="radio"/>
+                <span>Premium</span>
+             </label>
+             <label>
+                <input type="radio"/>
+                <span>Live TV</span>
+             </label>
+             <label>
+                <input type="radio"/>
+                <span>Music</span>
+             </label>
+             <label>
+                <input type="radio"/>
+                <span>ZEEPLEX</span>
+             </label>
+             <label>
+                <input type="radio"/>
+                <span>Play</span>
+             </label>
+             <label>
+                <input type="radio"/>
+                <span>Articles</span>
+             </label>
+             <label>
+                <input type="radio"/>
+                <span>Kids</span>
+             </label>
+             <label>
+                <input type="radio"/>
+                <span>Videos</span>
+             </label>
+             <label>
+                <input type="radio"/>
+                <span>Stories</span>
+             </label>
+             <label>
+                <input type="radio"/>
+                <span>Channels</span>
+             </label>
+       
+            </div>
+        </div>
+       </div>
+
+       <div id="navbar2">
+        <div id="query">
+             <i class="fa-solid fa-magnifying-glass"></i><input type="text"placeholder="Search for Movies,Shows,Channels etc.">
+        </div>
+        <div id="login">LOGIN</div>
+       <div id="buy"> <i class="fa-solid fa-crown"></i> BUY PLAN </div>
+      
+        <div class="list-choice">
+            <div class ="list-choice-title"> <i class="fa-solid fa-bars"></i></i> </div>
+            <div class ="list-choice-objects1">
+           
+            <label>
+               <input type="radio"/>
+               <span>Eduauraa</span>
+            </label>
+            <label>
+                <input type="radio"/>
+                <span>Premium</span>
+             </label>
+             <label>
+                <input type="radio"/>
+                <span>Live TV</span>
+             </label>
+             <label>
+                <input type="radio"/>
+                <span>Music</span>
+             </label>
+             <label>
+                <input type="radio"/>
+                <span>ZEEPLEX</span>
+             </label>
+             <label>
+                <input type="radio"/>
+                <span>Play</span>
+             </label>
+             <label>
+                <input type="radio"/>
+                <span>Articles</span>
+             </label>
+             <label>
+                <input type="radio"/>
+                <span>Kids</span>
+             </label>
+             <label>
+                <input type="radio"/>
+                <span>Videos</span>
+             </label>
+             <label>
+                <input type="radio"/>
+                <span>Stories</span>
+             </label>
+             <label>
+                <input type="radio"/>
+                <span>Channels</span>
+             </label>
+       
+            </div>
+        </div>
+       </div>
+    </div>
+</body>
+</html>
