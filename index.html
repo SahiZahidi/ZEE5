@@ -7,26 +7,51 @@
     <title>Zee5-Home</title>
     <link rel="preload" href="/fonts/glyph/Icons_InitialLoad.woff2?version=2.51.65" as="font" type="font/woff2" crossorigin="">
     <link rel="preload" href="/fonts/glyph/Icons_Other.woff2?version=2.51.65" as="font" type="font/woff2" crossorigin="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/861512847d.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/03120bbf35.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"crossorigin="anonymous"></script>
 
 </head>
 <style>
 * body {
         font-family: NotoSansRegular,sans-serif;
         background:#0f0617;
+        color: #fff;
     
 }
 
+
+#landing-page {
+
+    display:block;
+
+}
+
 #topmost {
-display:flex;
+display: flex ;
+flex-direction: row;
+width:98%;
 flex-wrap: right;
 justify-content: space-between;
 background:#0f0617;
 color:#fff;
-margin-top:20px;
-margin-right:20px;
-margin-left:20px;
+top:0;
+padding-top: 20px;
+margin-right:20px; 
+ margin-left:20px; 
+position:fixed;
+z-index: 99999;
+}
+
+
+#topmost > div {
+
+display:flex;
+flex-direction: row;
+
 }
 
 #logo1 {
@@ -50,14 +75,56 @@ gap:15px;
 margin-top: 8px;
 size: 14px;
 cursor: pointer;
+
 }
     
 #navbar2 {
 display: flex;
+justify-content: space-around;
+width:800px;
 gap: 30px;
 margin-bottom:10px;
 margin-top:5px;
 font-size: 20px;
+
+}
+
+#query  {
+
+
+display:flex;
+width:300px;
+gap: 10px;
+border: 1px solid rgb(168, 168, 168);
+border-radius: 5px;
+
+
+}
+
+#query > div > i  {
+
+margin-left: 8px; 
+margin-top: 8px;
+margin-bottom: 5px;
+
+font-size: 14px;
+
+}
+
+#query > div >  input {
+
+width:250px;
+background-color: #0f0617;
+border:none;
+/* padding-top: 4px; */
+
+}
+
+#query  ::placeholder {
+
+font-weight: 200;
+font-size: 11px ;
+
 }
 
 #login {
@@ -79,6 +146,34 @@ padding: 10px 8px 10px 8px;
 cursor: pointer;
 
 }
+
+#login:hover{
+
+color: black;
+background-color: #fff;
+
+}
+
+#buy:hover {
+
+background-color: #5c1c91;
+
+} 
+
+
+
+#nav-menu2 {
+margin-top: 5px;
+}
+
+
+#lang {
+
+margin-top: 8px;
+cursor:pointer;
+
+}
+
 
 
 .list-choice-objects input[type="radio"] {
@@ -106,7 +201,7 @@ color:rgb(229, 229, 229);
 text-shadow: none ;
 box-sizing: border-box solid;
 cursor: pointer;
-
+/* border-bottom: 4px solid #fff; */
 }
 
 
@@ -116,14 +211,20 @@ cursor: pointer;
 .list-choice-objects input[type="radio"] + span {
 color: rgb(255, 255, 255);
 padding: 5px 8px 5px 8px;
-display: flex;
+ display: flex;
+/* grid-template-columns: repeat(1,1fr); */ 
+
+/* grid-template-rows: auto; */
+flex-flow:column;
 text-align: left;
 cursor: pointer;
 width: 100%;
 margin-bottom: 10px;
-margin-left: 10px;
+margin-left: 20px;
 margin-right: 10px;
 box-sizing: border-box solid;
+background-color: #0f0617;
+z-index: -99999;
 
 }
 
@@ -131,19 +232,25 @@ box-sizing: border-box solid;
 .list-choice-objects1 input[type="radio"] + span {
 color: rgb(255, 255, 255);
 width:200px;
-padding: 5px 8px 5px 8px;
+padding: 0px 5px 0px 5px;
 display: flex;
+flex-direction: column;
 text-align:  left;
 cursor: pointer;
 margin-top: -10px;
-margin-left: 10px;
+margin-left: 20px;
 margin-right: 10px;
 box-sizing: border-box solid;
+background-color: #0f0617;
 
 }
 
 .list-choice-objects {
-display:flex;
+ display:flex; 
+/* grid-template-columns: repeat(1,1fr);  */
+/* grid-template-rows: auto; */
+flex-flow:column; 
+
 gap: 30px;
 position:absolute;
 font-size:12px;
@@ -153,19 +260,22 @@ overflow:hidden;
 max-height: 0;
 transition: all 250ms ease;
 box-sizing: border-box solid;
-
+background-color: #0f0617;
+z-index: -99999;
 }
 
 
 .list-choice-objects1 {
-display:block;
+display:flex;
+flex-flow: column;
 position:absolute;
 font-size:12px;
 font-weight: 600;
 overflow:hidden;
 max-height: 0;
-transition: all 250ms ease;
+transition: right 250ms ease;
 box-sizing: border-box solid;
+background-color: #0f0617;
 
 }
 
@@ -177,7 +287,8 @@ display:grid;
 grid-template-columns: repeat(3,1fr);
 grid-template-rows: auto;
 gap:5px;
-margin-top:25px;
+margin:25px 25px 25px 25px;
+
     
 }
 
@@ -207,7 +318,7 @@ transition: all 250ms ease-in-out;
 
 .list-choice:hover .list-choice-objects1  input[type="radio"] + span {
 
-transition: all 250ms ease-in-out;
+transition: right 250ms ease-in-out;
 
 }
 
@@ -224,12 +335,12 @@ border-radius: 5px 5px 5px 5px;
 }
 
 .list-choice:hover input[type="radio"]:checked + span:hover {
-background:none;
+background-color:#0f0617;
 
 }
 
 .list-choice input[type="radio"]:checked + span {
-background: none;
+background-color: #0f0617;
 
 
 }
@@ -243,17 +354,63 @@ border: 1px solid #372a42;
 
 
 .list-choice:hover .list-choice-objects1 {
-max-height: 540px;
+max-height: 600px;
 border: 1px solid #372a42;
 
 }
 
 
 
+.carosel {
+position: relative;
+margin-right: 30px;
+margin-left: 30px;
+margin-top: 100px;
+
+}
+
+.carosel > img {
+height: 442px;
+width: 1105px;
+
+}
+
+#container {
+margin-left: 30px;
+margin-right: 30px;
+margin-top: 10px;
+
+}
+
+#box1 {
+margin-top: 10px;
+
+
+}
+
+#box1 > h5 {
+ font-style: bold;
+
+}
+
+#box1-header {
+
+display: flex;
+flex-flow: row;
+justify-content: space-between;
+
+}
+
+#cards > div {
+    display: flex;
+    flex-direction: column;
+}
+
+
 </style>
 <body>
     <!-- ==================================================== Header ================================================= -->
-
+<!-- <div id="landing-page"> -->
     <div id="topmost" >
        <div id="navbar1" >
         <img id="logo1" src="https://www.zee5.com/images/ZEE5_logo.svg?ver=2.51.65">
@@ -373,6 +530,7 @@ border: 1px solid #372a42;
                 </div>
             </div>
         </div>
+        <div id="nav-menu1">
         <div class="list-choice">
             <div class ="list-choice-title"> <i class="fa-solid fa-grip"></i> </div>
             <div class ="list-choice-objects1">
@@ -424,16 +582,22 @@ border: 1px solid #372a42;
        
             </div>
         </div>
+        </div>
        </div>
 
        <div id="navbar2">
         <div id="query">
-             <i class="fa-solid fa-magnifying-glass"></i><input type="text"placeholder="Search for Movies,Shows,Channels etc.">
+           <div> <i class="fa-solid fa-magnifying-glass"></i></div>
+           <div><input type="text" placeholder= "Search for Movies,Shows,Channels etc."></div>
+
         </div>
+
+        <div id="lang"><i class="fa-solid fa-a"></i></div>
         <div id="login">LOGIN</div>
        <div id="buy"> <i class="fa-solid fa-crown"></i> BUY PLAN </div>
       
-        <div class="list-choice">
+       <div id="nav-menu2"> 
+       <div class="list-choice">
             <div class ="list-choice-title"> <i class="fa-solid fa-bars"></i></i> </div>
             <div class ="list-choice-objects1">
            
@@ -485,6 +649,65 @@ border: 1px solid #372a42;
             </div>
         </div>
        </div>
+       </div>
     </div>
+    
+    <div class="carosel">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-6-4z5145215/cover/1920x770a9add3f2aa4745838288b4147deb1b0f.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-0-1z5146416/cover/1920x77030295e51fe54452d8c85e76c5ec756e8.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-0-1z5133458/cover/1920x77060dd64aa6ef748f48bbdf4951a1f6af7b51352ca11794ad79904fded999459e7.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-6-3392/cover/1920x770e8ee948eb2884f80b7a385592bd62d36.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-6-366/cover/1920x77089a1e7be6d5e4668bdecd1a3bad12585.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-101-10z5145273/cover/rrrpfp27in1170x658090620220ef886894f604ee8b6266bb061743a66.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+       </div> 
+   <div id="container">     
+   <div id="box1">
+    <div id="box1-header">
+    <h5>ZEE5 Original Web Series</h5>
+    <div class="view-all">More</div></a>
+    </div>
+    <div id="cards"></div>
+        </div>
+    
+   
+   
+   
+   
+    
+</div>
+</div> 
+
 </body>
 </html>
