@@ -41,12 +41,12 @@ var PunMov=[
         cat:"Action",
     },
     {
-        img_url:"https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-0-1z512446/portrait/1920x770dbc95b0b237a44fc815f8172f7178aa9.jpg" ,
+        img_url:"https://akamaividz2.zee5.com/image/upload/w_321,h_482,c_scale,f_webp,q_auto:eco/resources/0-0-1z512446/portrait/1920x770dbc95b0b237a44fc815f8172f7178aa9.jpg" ,
         moviename:"Tara Mira Movie",
         cat:"Horror",
     },
     {
-        img_url:"https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-0-1z529263/portrait/1920x77053ca64a3a5a948919937b81eb7f2a7f8cb719fc89bb14adaaa3a92c09ff55aa0.jpg"  ,
+        img_url:"https://akamaividz2.zee5.com/image/upload/w_321,h_482,c_scale,f_webp,q_auto:eco/resources/0-0-1z529263/portrait/1920x77053ca64a3a5a948919937b81eb7f2a7f8cb719fc89bb14adaaa3a92c09ff55aa0.jpg"  ,
         moviename:"Qismat 2 Movie",
         cat:"Romance",
     },
@@ -97,7 +97,7 @@ var PunMov=[
         cat:"Thriller",
     },
     {
-        img_url:"https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-0-movie_1203346850/portrait/saabbahadar1920x73629616136d5621ce8d8a846078b01857b4ff60b54.jpg" ,
+        img_url:"https://akamaividz2.zee5.com/image/upload/w_321,h_482,c_scale,f_webp,q_auto:eco/resources/0-0-movie_1203346850/portrait/saabbahadar1920x73629616136d5621ce8d8a846078b01857b4ff60b54.jpg" ,
         moviename:"Saab Bahadar Movie",
         cat:"Thriller",
     },
