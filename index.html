@@ -25,13 +25,15 @@
         color: #fff;
     
 }
-
+a{
+    text-decoration: none;
+}
 
 #topmost {
 display: flex ;
 
 width:98%;
-flex-wrap: right;
+/* flex-wrap: right; */
 justify-content: space-between;
 background:#0f0617;
 color:#fff;
@@ -47,7 +49,7 @@ z-index: 99999;
 #topmost > div {
 
 display:flex;
-flex-direction: row;
+/* flex-direction: row; */
 
 }
 
@@ -68,6 +70,11 @@ gap:15px;
       
 }
 
+#navbar1 > a{
+    text-decoration: none;
+    color: #fff;
+
+}
 #icn2 {
 margin-top: 8px;
 size: 14px;
@@ -477,18 +484,16 @@ img {
   .prev, .next,.text {font-size: 11px}
 }
 
-
 a{
     text-decoration: none;
 }
 
 .container{
-    width: 100%;
-    /* margin: auto; */
+    width: 95.5%;
+    margin: auto;
     position: relative;
 }
 .top_heading{
-    width:110%;
     display: flex;
     margin-left: -60px;
     justify-content: space-between;
@@ -497,7 +502,7 @@ a{
 }
 
 .top_heading>p,a{
-    margin-top: 25px;
+    margin-top: 30px;
 }
 .top_heading a{
     color:#a785ff;
@@ -505,15 +510,17 @@ a{
 .top >h1{
   margin-top: 20px;
 }
-
+/* ----------------------------------heading End --------------------- */
 
 .card_container {
-  
+    /* width: 80%; */
     height: 380px;
     display: flex;
     align-items: center;
-    transform: translateX(0);
     margin-left: -85px;
+    transform: translateX(0);
+  /* margin: auto; */
+
     transition: all 0.4s ease-in-out;
     
 
@@ -535,8 +542,8 @@ a{
     border: 4px solid #ffffff;
     background-color: #ffffff;
     /* height: 350px; */
+  
 }
-
 .crown{
     position: absolute;
     top: 1%;
@@ -559,7 +566,6 @@ a{
 .card >img{
     width: 100%;
     border-radius: 5px;
-    position: relative;
 }
 .text{
     width: 100%;
@@ -567,72 +573,53 @@ a{
     bottom: 0;
     color: #5f5f5f;
     background-color: #ffffff;
-    font-size: 11px;
-    padding-left: 10px;
+    padding-bottom: 10px;
+    /* border-radius: 5px; */
+    line-height: 2;
+    padding-left: 2%;
     display: none;
     transition: 0.4s;
 }
 .card:hover .text{
-    display: inherit;
+    display: grid;
 }
+
+
+
 .text >p{
-    
-    margin-bottom: 50px;
+    padding: 1% 1.5%;
+    font-size: 11px;
     font-weight: bold;
+    /* position: absolute; */
     
 }
 .text_bottom{
-    position: absolute;
     display: flex;
-    align-items: justify;
-    bottom: 0;
-    padding-left:10px;
+    align-items: left;
     
 }
-
 .text_bottom a{
     border: 1px solid gray;
-    padding: 5px 8px 5px 8px;
-    border-radius: 5px;
+    padding:  5px 8px 5px 8px; 
+    /* padding-bottom: none; */
+    border-radius: 8px;
     font-size: 12px;
     font-weight: 600;
-    justify-content: left;
-    width:100px;
-    margin-top:5px;
-    margin-bottom: 5px;
-    visibility: hidden;
-
-
+    margin-right: 10px;
 }
-.text_bottom p{
-    margin-top:5px;
-    margin-bottom: 5px;
-    padding: 5px 8px 5px 8px;
-    width: 100px;
-    visibility: hidden;
+.text_bottom a{
+    margin-top: 10px;
 }
-
-.text-bottom :hover a+p {
-
-        visibility: visible;
-    }
-   
-
-
-
-.text_bottom p{
-    color: gray;
-}
-
 .text_bottom a:hover{
     background-color: #8230c6;
     color: #ffffff;
 }
-
-.text_bottom p:hover{
-   
-    color: #8230c6;
+.text_bottom p{
+    color: gray;
+    /* padding:  5px 8px 5px 8px;  */
+    /* margin-bottom: -50px;  */
 }
+
   
 
 .movie-list-wrapper {
@@ -662,7 +649,7 @@ a{
         <img id="logo1" src="https://www.zee5.com/images/ZEE5_logo.svg?ver=2.51.65">
         <!-- <div id="home"> Home</div> -->
         <div class="list-choice">
-            <div class ="list-choice-title"> Home</div>  
+            <div class ="list-choice-title"> <a href="index.html">Home</a></div>  
         </div>
         <!-- <div id="Tvshows"> TV Shows</div> -->
         <div class="list-choice">
@@ -970,7 +957,7 @@ a{
         <div class="container">
         <div class="top_heading">
         <p>ZEE5 Original Web Series</p>
-        <a href="more2.html">More <i class="fa-solid fa-angle-right"></i></a>
+        <a href="Slidemore.html">More <i class="fa-solid fa-angle-right"></i></a>
         </div>
         
         <!-- card-- container -->
@@ -980,10 +967,11 @@ a{
         <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-6-4z5145215/portrait/1920x770a9add3f2aa4745838288b4147deb1b0f.jpg" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>The Broken News</p></div>
+        <p>The Broken News</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
+        </div>
         </div>
         </div>
         
@@ -992,132 +980,133 @@ a{
         <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-6-1298/portrait/1920x770d9ead07e5b304a989d85cf8c6e0113fb.jpg" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Abhay</p></div>
+        <p>Abhay</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
-        
+        </div>
         </div>
         
         <div class="card">
         <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-6-4z587408/portrait/1920x770195db875fe204fa4afe115764b5dc00ba004028948aa4211b107faed649301d7.jpg" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Mithya</p></div>
+        <p>Mithya</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
-        
+    </div> 
         </div>
         
         <div class="card">
         <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-6-4z596111/portrait/1920x7709fcbdd4c78184b51aadd7e2e34396dbf.jpg" alt="Bloody Brothers">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Bloody Brothers</p></div>
+        <p>Bloody Brothers</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
-        
+    </div>
         </div>
         
         <div class="card">
         <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-6-2356/portrait/1920x770ffdfc616c75840cf95545cd67e3476d6e2fb2ce4623c4ebaa29b36ba97edf983.jpg" alt="Never Kiss Your Best Friend">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Never Kiss Your Best Friend</p></div>
+        <p>Never Kiss Your Best Friend</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
-        
+    </div>
         </div>
         
         <div class="card">
         <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-6-3064/portrait/1920x770f6f1d5315e9145808275b6b69e6572f7.jpg" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Bicchoo ka khel</p></div>
+        <p>Bicchoo ka khel</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
-        
+    </div>
         </div>
         
         <div class="card">
         <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-6-4z560880/portrait/1920x77049b3662989f0475198d1963a5d256ebc.jpg" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>kaun banegi shikharwati</p></div>
+        <p>kaun banegi shikharwati</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
-        
+    </div>
         </div>
         
         <div class="card">
         <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-6-3502/portrait/1920x77096c3c9d32c6946bb933bef0e7463b7af.jpg" alt="Pavitra Rishta 2.0">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Pavitra Rishta 2.0</p></div>
+        <p>Pavitra Rishta 2.0</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
-        
+    </div>
         </div>
         
         <div class="card">
         <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-4z5130773/portrait/1920x7708e0b2f3ad3bb45b8be8b3073d20fb1aa.jpg" alt="Anantham Web Series">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Anantham</p></div>
+        <p>Anantham</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
-        
+    </div> 
         </div>
         
         <div class="card">
         <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-6-3044/portrait/063044incover98740071191a4d21bb818ea29d68541e.jpg" alt="Taish Web Series" >
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Taish</p> </div>
+        <p>Taish</p> 
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
-       
+    </div>
         </div>
         
         <div class="card">
             <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-6-2356/portrait/1920x770ffdfc616c75840cf95545cd67e3476d6e2fb2ce4623c4ebaa29b36ba97edf983.jpg" alt="Never Kiss Your Best Friend">
             <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
             <div class="text">
-            <p>Never Kiss Your Best Friend</p></div>
+            <p>Never Kiss Your Best Friend</p>
             <div class="text_bottom">
             <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
             <p><i class="fa-solid fa-share-nodes"></i>Share</p>
             </div>
-        
+        </div>
         </div>
         
         <div class="card">
             <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-6-4z5145215/portrait/1920x770a9add3f2aa4745838288b4147deb1b0f.jpg" alt="Mithya">
             <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
             <div class="text">
-            <p>The Broken News</p></div>
+            <p>The Broken News</p>
             <div class="text_bottom">
             <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
             <p><i class="fa-solid fa-share-nodes"></i>Share</p>
             </div>
             </div>
+        </div>
     
         </div>
         </div>
@@ -1138,132 +1127,143 @@ a{
         <img src="./img/s1.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Baarish Aur Chowmein</p></div>
+        <p>Baarish Aur Chowmein</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
+    </div>
         </div>
         
         <div class="card">
         <img src="./img/s2.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Silvat</p></div>
+        <p>Silvat</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
         </div>
+    </div>
         
         <div class="card">
         <img src="./img/s3.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Half Full</p></div>
+        <p>Half Full</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
         </div>
-        
+    </div>
         <div class="card">
         <img src="./img/s4.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Deuce</p></div>
+        <p>Deuce</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
         </div>
+    </div>
         
          <div class="card">
         <img src="./img/s5.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>L</p></div>
+        <p>L</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
         </div>
+    </div>
         
         <div class="card">
         <img src="./img/s6.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>TobaTek Singh</p></div>
+        <p>TobaTek Singh</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
         </div>
+    </div>
         
         <div class="card">
         <img src="./img/s7.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Bijaya</p></div>
+        <p>Bijaya</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
         </div>
+    </div>
         
         <div class="card">
         <img src="./img/s1.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Satyameva Jayate</p></div>
+        <p>Satyameva Jayate</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
         </div>
+    </div>
         
         <div class="card">
         <img src="./img/s2.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Dream Girl</p></div>
+        <p>Dream Girl</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
         </div>
+    </div>
         
         <div class="card">
         <img src="./img/s4.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Kori Khala</p></div>
+        <p>Kori Khala</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
         </div>
+    </div>
         
         <div class="card">
         <img src="./img/s6.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Helmet</p></div>
+        <p>Helmet</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
         </div>
+    </div>
         
         <div class="card">
         <img src="./img/s7.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Jiban Sathi</p></div>
+        <p>Jiban Sathi</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
+    </div>
 
         </div>
         </div>
@@ -1284,11 +1284,12 @@ a{
         <img src="./img/b1.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Rihaee</p></div>
+        <p>Rihaee</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
+    </div>
 
         </div>
         
@@ -1296,23 +1297,25 @@ a{
         <img src="./img/b3.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Himmatwala</p></div>
+        <p>Himmatwala</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
+    </div>
         </div>
         
         <div class="card">
         <img src="./img/b4.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Ek Raja Theen lougai</p></div>
+        <p>Ek Raja Theen lougai</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
         </div>
+    </div>
         
         <div class="card">
         <img src="./img/b5.webp" alt="Mithya">
@@ -1329,88 +1332,96 @@ a{
         <img src="./img/b6.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Thoda gussa thoda pyaar</p></div>
+        <p>Thoda gussa thoda pyaar</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
         </div>
+    </div>
         
         <div class="card">
         <img src="./img/b7.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>JZWS</p></div>
+        <p>JZWS</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
         </div>
+    </div>
         
         <div class="card">
         <img src="./img/b8.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Mithya</p></div>
+        <p>Mithya</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
+    </div>
         </div>
         
         <div class="card">
         <img src="./img/b9.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text"> 
-        <p>Mithya</p></div>
+        <p>Mithya</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
+    </div>
         </div>
         
         <div class="card">
         <img src="./img/b10.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Mithya</p></div>
+        <p>Mithya</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
         </div>
+    </div>
         
         <div class="card">
         <img src="./img/b11.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Mithya</p></div>
+        <p>Mithya</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
         </div>
+    </div>
         
         <div class="card">
         <img src="./img/b12.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Mithya</p></div>
+        <p>Mithya</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
+    </div>
         </div>
         
         <div class="card">
         <img src="./img/b1.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Mithya</p></div>
+        <p>Mithya</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
+    </div>
 
         </div>
         </div>
@@ -1431,11 +1442,12 @@ a{
         <img src="./img/i1.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Rashmi Rocket</p></div>
+        <p>Rashmi Rocket</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
+    </div>
 
         </div>
         
@@ -1443,129 +1455,132 @@ a{
         <img src="./img/i2.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>South Movie</p></div>
+        <p>South Movie</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
-
+    </div>
         </div>
         
         <div class="card">
         <img src="./img/i3.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Jersey</p></div>
+        <p>Jersey</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
-
+    </div>
         </div>
         
         <div class="card">
         <img src="./img/i4.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>South Movie</p></div>
+        <p>South Movie</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
-
+    </div>
         </div>
         
         <div class="card">
         <img src="./img/i5.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Series</p></div>
+        <p>Series</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
-
+    </div>
         </div>
         
         <div class="card">
         <img src="./img/i6.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Series</p></div>
+        <p>Series</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
-
+    </div>
         </div>
         
         <div class="card">
         <img src="./img/i7.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Mithya</p></div>
+        <p>Mithya</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
-
+    </div>
         </div>
         
         <div class="card">
         <img src="./img/i8.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Mithya</p></div>
+        <p>Mithya</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
+    </div>
         </div>
         
         <div class="card">
         <img src="./img/i9.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Mithya</p></div>
+        <p>Mithya</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
-
+    </div>
         </div>
         
         <div class="card">
         <img src="./img/i10.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Mithya</p></div>
+        <p>Mithya</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
-
+    </div>
         </div>
         
         <div class="card">
         <img src="./img/i11.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Mithya</p></div>
+        <p>Mithya</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
+    </div>
         </div>
         
         <div class="card">
         <img src="./img/i12.webp" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
         <div class="text">
-        <p>Mithya</p></div>
+        <p>Mithya</p>
         <div class="text_bottom">
         <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
+    </div>
         </div>
         </div>
         
