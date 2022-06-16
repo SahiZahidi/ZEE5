@@ -175,7 +175,7 @@ position: relative;
 background:none;
 text-align: left;
 padding: 0px 10px 0px 10px;
-color:rgb(229, 229, 229);
+color:white;
 text-shadow: none ;
 box-sizing: border-box solid;
 cursor: pointer;
@@ -183,7 +183,7 @@ cursor: pointer;
 }
 
 .list-choice-objects input[type="radio"] + span {
-color: rgb(255, 255, 255);
+color: white;
 padding: 0px 5px 0px 5px;
 display:grid;
 text-align: left;
@@ -199,7 +199,7 @@ background-color: #0f0617;
 
 
 .list-choice-objects1 input[type="radio"] + span {
-color: rgb(255, 255, 255);
+color: white;
 width:200px;
 padding: 0px 5px 0px 5px;
 display: grid;
