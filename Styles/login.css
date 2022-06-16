@@ -86,7 +86,7 @@ input{
     width: 86%;
     margin: auto;
     height: 1px;
-    background: red;
+    background: rgb(105, 99, 99);
 }
 button{
     background-color: transparent;
