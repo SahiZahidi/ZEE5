@@ -15,6 +15,7 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" 
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
@@ -633,6 +634,196 @@ a{
 
 }
 
+#footer{
+    height: auto;
+    background-color: #0f0617;
+    font-size: 12px;
+    width: 100%;
+    margin: auto;
+}
+
+#footer a:hover{
+    color: deeppink;
+}
+
+#footer a {
+    color: hsla(0,0%,100%,.5);
+}
+
+#footer p, h4{
+    color: #ffffff;
+}
+
+
+.row{
+    display: flex;
+     flex-wrap: wrap; 
+    margin: auto;
+    justify-content: space-between;
+    
+}
+.row > .footer-col{
+    margin-top: 10px;
+}
+.footer-col>div{
+    margin-top:16px;
+}
+.end{
+    margin: 3% 0 1% 0;
+    font-size: 13px;
+    color:hsla(0,0%,100%,.5) ;
+} 
+footer h3{
+    font-weight: 20px;
+    color: white;
+}
+.logDiv{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+.logo h4{
+    margin-right: 10px;
+}
+.logo a{
+    margin-right: 10px;
+}
+
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;    
+} 
+
+.leftlogo{    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;  
+}
+.leftlogo a{
+    margin-left: 10px    
+}
+a{
+    text-decoration:none;
+}
+.logo-On{
+    width:40px;
+    height:40px;
+}
+.about{
+    width:40%;
+    margin:20px auto ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    
+}
+footer p{
+    text-align: center;
+    font-size: 11px;
+    
+}
+.topFooter{
+    
+    height: 210px;  
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    margin-top:50px;
+    margin-bottom:50px;
+
+}
+footer h4{
+    margin-top: 10px;
+}
+.leftlogo a{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(37, 35, 35);
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.leftlogo i{
+    font-size: 15px;
+    color: bisque;
+}
+.leftlogo h4{
+    margin-top: 0px;
+}
+.leftlogo .fb:hover{
+    background-color: blue;
+    cursor: pointer;
+    
+}
+.leftlogo .insta:hover{
+    background-color: rgb(211, 12, 128);
+    cursor: pointer;
+}
+.leftlogo .twitter:hover{
+    background-color: rgb(20, 153, 230);
+    cursor: pointer;
+}
+.leftlogo .youtube:hover{
+    background-color: rgb(252, 47, 10);
+    cursor: pointer;
+}
+@media all and (min-width:51px ) and (max-width: 381px){
+    .about{
+        width:80%;
+        margin:20px auto ;
+        display: flex;
+        flex-wrap: wrap;        
+        justify-content: space-between;
+        
+    }
+    .leftlogo{
+        margin-top: 20px;
+        flex-wrap: nowrap;
+    }
+    .logo > h4{
+        display: none;
+        
+    }
+    .leftlogo > h4{
+        display: none;
+        
+    }
+    .leftlogo a{
+        margin-right: 10px    
+    }
+
+}
+
+@media all and (min-width:380px ) and (max-width: 981px){
+    .about{
+        width:80%;
+        margin:20px auto ;
+        display: flex;
+        flex-wrap: wrap;        
+        justify-content: space-between;
+        
+    }
+    .leftlogo{
+        margin-top: 20px;
+        flex-wrap: nowrap;
+    }
+    .logo{
+        flex-wrap: nowrap;
+    }
+}
+
 
 </style>
 <body>
@@ -969,7 +1160,18 @@ a{
         </div>
         </div>
         
-        
+        <div class="card">
+            <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-6-4z587408/portrait/1920x770195db875fe204fa4afe115764b5dc00ba004028948aa4211b107faed649301d7.jpg" alt="Mithya">
+            <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
+            <div class="text">
+            <p>Mithya</p>
+            <div class="text_bottom">
+            <a href="./watch.html"><i class="fa-solid fa-play"></i>Watch</a>
+            <p><i class="fa-solid fa-share-nodes"></i>Share</p>
+            </div>
+        </div> 
+            </div>
+
         <div class="card">
         <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-6-1298/portrait/1920x770d9ead07e5b304a989d85cf8c6e0113fb.jpg" alt="Mithya">
         <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
@@ -982,17 +1184,7 @@ a{
         </div>
         </div>
         
-        <div class="card">
-        <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-6-4z587408/portrait/1920x770195db875fe204fa4afe115764b5dc00ba004028948aa4211b107faed649301d7.jpg" alt="Mithya">
-        <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
-        <div class="text">
-        <p>Mithya</p>
-        <div class="text_bottom">
-        <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
-        <p><i class="fa-solid fa-share-nodes"></i>Share</p>
-        </div>
-    </div> 
-        </div>
+
         
         <div class="card">
         <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-6-4z596111/portrait/1920x7709fcbdd4c78184b51aadd7e2e34396dbf.jpg" alt="Bloody Brothers">
@@ -1427,160 +1619,161 @@ a{
         <div class="movie-list-wrapper">
             <div class="container">
             <div class="top_heading">
-            <p>News</p>
-            <a href="./more3.html">More <i class="fa-solid fa-angle-right"></i></a>
+            <p>Top Bhojpuri Movies</p>
+            <a href="./Slidemore3.html">More <i class="fa-solid fa-angle-right"></i></a>
             </div>
             <div class="card_container">
             
             <div class="card">
-            <img src="https://akamaividz2.zee5.com/image/upload/w_451,h_254,c_scale,f_webp,q_auto:eco/resources/0-9-zeepunjabharyanahima/list/zphh14405b673f1d0f8a43969c82a3c67dff3dad.jpg"    alt="Mithya">
+            <img src="https://akamaividz2.zee5.com/image/upload/w_321,h_482,c_scale,f_webp,q_auto:eco,dpr_2.0/resources/0-0-142683/portrait/1920x770622255331.jpg" alt="Mithya">
             <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
             <div class="text">
-            <p>Zee Punjab Haryana Himachal Pradesh Live TV</p>
+            <p>Ghoonghat Mein Ghotala</p>
             <div class="text_bottom">
             <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
-            <p><i class="fa-solid fa-share-nodes"></i>Share</p>
+            <p><i class="fa-solid fa-share-nodes"></i> More</p>
             </div>
-        </div>
-    
+            </div>
             </div>
             
             <div class="card">
-            <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-0-1z5146416/portrait/1920x77030295e51fe54452d8c85e76c5ec756e8.jpg" alt="Mithya">
+            <img src="https://akamaividz2.zee5.com/image/upload/w_321,h_482,c_scale,f_webp,q_auto:eco,dpr_2.0/resources/0-0-1z548495/portrait/1920x770388a96f8a09947019f62485b3f187b2b.jpg" alt="Mithya">
             <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
             <div class="text">
-            <p>Attack: Part 1 Movie</p>
+            <p>Diljale</p>
             <div class="text_bottom">
             <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
-            <p><i class="fa-solid fa-share-nodes"></i>Share</p>
+            <p><i class="fa-solid fa-share-nodes"></i> More</p>
             </div>
-        </div>
+            </div>
             </div>
             
             <div class="card">
-            <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-0-1z5148935/portrait/1920x770ea4b4ed358824163a009717b04978419802bc3eabf62498685faf98fb8817e0a.jpg" alt="Mithya">
+            <img src="https://akamaividz2.zee5.com/image/upload/w_321,h_482,c_scale,f_webp,q_auto:eco,dpr_2.0/resources/0-0-1z597182/portrait/1920x770c46471e3057849bf858e25be8e1a3088.jpg" alt="Mithya">
             <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
             <div class="text">
-            <p>Ardh Movie</p>
+            <p>Daamadji</p>
             <div class="text_bottom">
             <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
-            <p><i class="fa-solid fa-share-nodes"></i>Share</p>
+            <p><i class="fa-solid fa-share-nodes"></i> More</p>
             </div>
-            </div>
-        </div>
-            
-            <div class="card">
-            <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-0-1z5133458/portrait/1920x77060dd64aa6ef748f48bbdf4951a1f6af7b51352ca11794ad79904fded999459e7.jpg" alt="Mithya">
-            <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
-            <div class="text">
-            <p>The Kashmir Files Movie</p>
-            <div class="text_bottom"></div>
-            <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
-            <p><i class="fa-solid fa-share-nodes"></i>Share</p>
             </div>
             </div>
             
             <div class="card">
-            <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-0-1z5156101/portrait/1920x7702f5c1d7a0eee45bdbdd6f473c9f51fe8.jpg"  alt="Mithya">
+            <img src="https://akamaividz2.zee5.com/image/upload/w_321,h_482,c_scale,f_webp,q_auto:eco,dpr_2.0/resources/0-0-19305/portrait/biwino11920x770.jpg" alt="Mithya">
             <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
             <div class="text">
-            <p>Radhe Shyam Movie</p>
+            <p>Biwi No. 1</p>
             <div class="text_bottom">
             <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
-            <p><i class="fa-solid fa-share-nodes"></i>Share</p>
+            <p><i class="fa-solid fa-share-nodes"></i> More</p>
             </div>
             </div>
-        </div>
+            </div>
             
             <div class="card">
-            <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-0-1z5161064/portrait/1920x770c61833d398744000af7c71e0c790ac04.jpg"  alt="Mithya">
+            <img src="https://akamaividz2.zee5.com/image/upload/w_321,h_482,c_scale,f_webp,q_auto:eco,dpr_2.0/resources/0-0-movie_1259872199/portrait/00movie12598722098072721.jpg" alt="Mithya">
             <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
             <div class="text">
-            <p>Dharmaveer: Mukkam Post Thane Movie</p>
+            <p>Mahabharat</p>
             <div class="text_bottom">
             <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
-            <p><i class="fa-solid fa-share-nodes"></i>Share</p>
+            <p><i class="fa-solid fa-share-nodes"></i> More</p>
             </div>
             </div>
-        </div>
+            </div>
             
             <div class="card">
-            <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-0-1z5149852/portrait/1920x770e8feb74f37634acfbaed7c515c3d7439.jpg" alt="Mithya">
+            <img src="https://akamaividz2.zee5.com/image/upload/w_321,h_482,c_scale,f_webp,q_auto:eco,dpr_2.0/resources/0-0-1z51698/portrait/1920x770e5aa1f96a0a34a8ab8c4b5d1969ba64b.jpg" alt="Mithya">
             <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
             <div class="text">
-            <p>Forensic Movie</p>
+            <p>Yadav Paan Bhandar</p>
             <div class="text_bottom">
             <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
-            <p><i class="fa-solid fa-share-nodes"></i>Share</p>
+            <p><i class="fa-solid fa-share-nodes"></i> More</p>
             </div>
-        </div>
+            </div>
             </div>
             
             <div class="card">
-            <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-0-1z5133622/portrait/1920x7705ef1215cc2984b548b3356566bf54c3d.jpg" alt="Mithya">
+            <img src="https://akamaividz2.zee5.com/image/upload/w_321,h_482,c_scale,f_webp,q_auto:eco,dpr_2.0/resources/0-0-1z55609/portrait/1920x7701b85db0477a34b518f162045398ab7a7.jpg" alt="Mithya">
+            <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
+            <div class="text">
+            <p>Dulhin Ganga Paar Ke</p>
+            <div class="text_bottom">
+            <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
+            <p><i class="fa-solid fa-share-nodes"></i> More</p>
+            </div>
+            </div>
+            </div>
+            
+            <div class="card">
+            <img src="https://akamaividz2.zee5.com/image/upload/w_321,h_482,c_scale,f_webp,q_auto:eco,dpr_2.0/resources/0-0-movie_1577869076/portrait/jigar1920x770.jpg" alt="Mithya">
             <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
             <div class="text"> 
-            <p>Jhund Movie</p>
+            <p>Jigar</p>
             <div class="text_bottom">
             <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
-            <p><i class="fa-solid fa-share-nodes"></i>Share</p>
+            <p><i class="fa-solid fa-share-nodes"></i> More</p>
             </div>
-        </div>
+            </div>
             </div>
             
             <div class="card">
-            <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-0-1z5145103/portrait/1920x770189f07ded33c4436b6d1796409308f04.jpg"  alt="Mithya">
+            <img src="https://akamaividz2.zee5.com/image/upload/w_321,h_482,c_scale,f_webp,q_auto:eco,dpr_2.0/resources/0-0-1z51017/portrait/1920x77068f6962f4b124bd7a162371a0915e3b2.jpg" alt="Mithya">
             <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
             <div class="text">
-            <p>Zombivli Movie</p>
+            <p>Nirahua Chalal London</p>
             <div class="text_bottom">
             <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
-            <p><i class="fa-solid fa-share-nodes"></i>Share</p>
+            <p><i class="fa-solid fa-share-nodes"></i> More</p>
             </div>
             </div>
-        </div>
-            
-            <div class="card">
-            <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-0-1z5117565/portrait/1920x7708e744fbdcb554e54a1036108a0832ebf.jpg"  alt="Mithya">
-            <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
-            <div class="text">
-            <p>Valimai (Hindi) Movie</p>
-            <div class="text_bottom">
-            <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
-            <p><i class="fa-solid fa-share-nodes"></i>Share</p>
-            </div>
-            </div>
-        </div>
-            
-            <div class="card">
-            <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-0-1z562203/portrait/1920x7706847e0d919d448328eeb2f88b259d73a0fd8743b1e984c9782e72e68355cf49e.jpg"  alt="Mithya">
-            <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
-            <div class="text">
-            <p>Antim: The Final Truth Movie</p>
-            <div class="text_bottom">
-            <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
-            <p><i class="fa-solid fa-share-nodes"></i>Share</p>
-            </div>
-        </div>
             </div>
             
             <div class="card">
-            <img src="https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-0-399328/portrait/1920x770a44ed4e50d1a4bbda6263e0e3827d500566de68e2bba45f787a4ceab521a3a7f.jpg"  alt="Mithya">
+            <img src="https://akamaividz2.zee5.com/image/upload/w_321,h_482,c_scale,f_webp,q_auto:eco,dpr_2.0/resources/0-0-1z513111/portrait/1920x770dfed6f74d7b24186a5739b423199c08e.jpg" alt="Mithya">
             <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
             <div class="text">
-            <p>Radhe - Your Most Wanted Bhai</p>
+            <p>Jeena Marna Tere Sang</p>
             <div class="text_bottom">
             <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
-            <p><i class="fa-solid fa-share-nodes"></i>Share</p>
+            <p><i class="fa-solid fa-share-nodes"></i> More</p>
             </div>
-        </div>
-    
+            </div>
+            </div>
+            
+            <div class="card">
+            <img src="https://akamaividz2.zee5.com/image/upload/w_321,h_482,c_scale,f_webp,q_auto:eco,dpr_2.0/resources/0-0-1z51620/portrait/1920x770inceda04401dfc4d67863f4d3f7d1b73e8.jpg" alt="Mithya">
+            <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
+            <div class="text">
+            <p>Chutki Bhar Sindoor</p>
+            <div class="text_bottom">
+            <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
+            <p><i class="fa-solid fa-share-nodes"></i> More</p>
+            </div>
+            </div>
+            </div>
+            
+            <div class="card">
+            <img src="https://akamaividz2.zee5.com/image/upload/w_321,h_482,c_scale,f_webp,q_auto:eco,dpr_2.0/resources/0-0-257026/portrait/1920x770557973062.jpg" alt="Mithya">
+            <div class="crown"><a href="#"><i class="fa-solid fa-crown"></i></a></div>
+            <div class="text">
+            <p>Parvarish</p>
+            <div class="text_bottom">
+            <a href="#"><i class="fa-solid fa-play"></i> Watch</a>
+            <p><i class="fa-solid fa-share-nodes"></i> More</p>
+            </div>
+            </div>
             </div>
             </div>
             
             <div class="next2">&#10095;</div>
-            </div>
-            </div>
+        </div>
+        </div>
+           
+           
         
         <div class="movie-list-wrapper">
         <div class="container">
@@ -1739,7 +1932,80 @@ a{
         <div class="next2">&#10095;</div>
         </div>
         </div>
-           
+<footer id="footer">
+            <div class="container">
+            <hr style="height:0.5px;border-width:0;color:gray;background-color:rgb(32, 28, 28);margin-top: 15px;">
+            <br>
+            <div class="logDiv">
+            <div class="logo">
+            <h4>Download Apps</h4>
+            <a href="https://play.google.com/store/apps/details?id=com.graymatrix.did"><img src="https://www.zee5.com/images/play_store.png?ver=2.50.94"></a>
+            <a href="https://apps.apple.com/in/app/zee5-shows-live-tv-movies/id743691886"><img src="https://www.zee5.com/images/app_store.png?ver=2.50.94"></a>
+            </div>
+            <div class="leftlogo">
+            <h4>Connect with us</h4>
+            <a href="https://www.facebook.com/ZEE5/" class="fb"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/zee5/" class="insta"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/zee5india" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UCXOgAl4w-FQero1ERbGHpXQ" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            </div>
+            <div class="about">
+            
+            <p><a href="./about.html">About Us</a></p>
+            <p>|</p>
+            
+            <p><a href="./helpcenter.html">Help Center</a></p>
+            <p>|</p>
+            
+            <p><a href="./Buyplan1.html">Buy Plan</a></p>
+            </div>
+            <div class="row">
+            <div class="footer-col">
+            <h3>Popular TV Shows</h3>
+            <div><a href="https://www.zee5.com/movies/details/kya-meri-sonam-gupta-bewafa-hai/0-0-1z51625">Kumkum Bhagya</a></div>
+            <div><a href="">Kundali Bhagya</a></div>
+            <div><a href="">Bhagya Lakshmi</a></div>
+            <div><a href="">Tujhse Hai Raabta</a></div>
+            <div><a href="">Kyun Rishton Mein Katti Batti</a></div>
+            </div>
+            <div class="footer-col">
+            <h3>Premium Movies</h3>
+            <div><a href="">Kya Meri Sonam Gupta Bewafa</a></div>
+            <div><a href="">Helmet</a></div>
+            <div><a href="">200 Halla Ho</a></div>
+            <div><a href="">14 Phere</a></div>
+            <div><a href="">Dial 100</a></div>
+            </div>
+            <div class="footer-col">
+            <h3>Popular LIVE TV Channels</h3>
+            <div><a href="">Aaj Tak</a></div>
+            <div><a href="">Zee News</a></div>
+            <div><a href="">Zee Tv HD</a></div>
+            <div><a href="">&TV HD</a></div>
+            <div><a href="">Zee Marathi HD</a></div>
+            </div>
+            <div class="footer-col">
+            <h3>Popular Web Series</h3>
+            <div><a href="">Sunflower</a></div>
+            <div><a href="">Jeet Ki Zid</a></div>
+            <div><a href="">Biccho Ka Khel</a></div>
+            <div><a href="">State of Seige:26/11</a></div>
+            <div><a href="">Naxalbari</a></div>
+            </div>
+            <div class="footer-col">
+            <h3>Bollywood Top Celebrities</h3>
+            <div><a href="">Sunny Leone</a></div>
+            <div><a href="">Disha Patani</a></div>
+            <div><a href="">Deepika Padukone</a></div>
+            <div><a href="">Salman Khan</a></div>
+            <div><a href="">Nora Fatehi</a></div>
+            </div>
+            </div>
+            <div class="end">Best viewed on Google Chrome 80+, Microsoft Edge 81+, Mozilla Firefox 75+, Safari 5.1.5+
+            Copyright © 2022 Zee Entertainment Enterprises Ltd. All rights reserved.</div>
+            </div>
+</footer>         
     
 
 
