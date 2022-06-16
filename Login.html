@@ -13,7 +13,7 @@
 
 <style>
     button{
-        background-color: purple;
+        background-color:  #8230c6;
         border: none;
         color: white;
         padding: 12px 32px;
@@ -42,9 +42,9 @@
 </style>
 </head>
 <body>
-  <a class="cross" href="./index.html"><i class="fa-solid fa-xmark"></i></a>
+    <a  class="cross" href="./index.html"><i style="font-size: 10px;"class="fa-solid fa-xmark"></i></a>
     <div id="box">
-        <h1 id="loginhead">Login to ZEE5</h1>
+        <h4 style="color:white;" id="loginhead">Login to ZEE5</h4>
         <p id="desc">Login to continue enjoying uninterrupted video and personalised experience.</p>
         <a class="fang" href="https://appleid.apple.com/auth/authorize?client_id=com.zee5.pwa&redirect_uri=https%3A%2F%2Fwww.zee5.com&response_type=code%20id_token&state=origin%3Aweb&scope=name%20email&response_mode=web_message&frame_id=5bbf30d0-3ae8-4031-a971-a294b015487e&m=11&v=1.5.4">         <img src="https://www.zee5.com/images/apple-social-icon-circle.svg?ver=2.50.94" alt="">
         </a> 
@@ -73,7 +73,7 @@
 <button onClick="submit2()" >Log In</button>
 <br>
 <br>
-<span>New to ZEE5?</span> <a style="color:#fff; " href="Signin.html"><u>Register</u></a>
+<span>New to ZEE5?</span> <a style="color:#fff; " href="Register.html"><u>Register</u></a>
 </div>
 </body>
 </html>
@@ -100,7 +100,7 @@
     if(flag==true){
         
         alert("Login Success");
-        window.location.href="index1.html";
+        window.location.href="index.html";
     }
     else{
         alert("Login Failed Please fill correct details");
