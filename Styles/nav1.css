@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body {
+       font-family: 'NotoSansRegular',sans-serif;
+       background:#0f0617;
+       color: #fff;
+   
+}
+a {
+       text-decoration: none;
+       color:#fff;
+   }
+
+#topmost {
+display: flex ;
+
+width:98%;
+flex-wrap: right;
+justify-content: space-between;
+background:#0f0617;
+color:#fff;
+top:0;
+padding-top: 20px;
+margin-right:20px; 
+margin-left:20px; 
+position:fixed;
+z-index: 99999;
+}
+
+
+#topmost > div {
+
+display:flex;
+flex-direction: row;
+
+}
+
+#logo1 {
+height:45px;
+width:45px;
+margin-top:-10px;
+margin-right: 10px;
+}
+
+#navbar1 {
+display: flex;
+width:800px;
+margin-top: 10px;
+line-height: 30px;
+font-size: 14px;
+gap:15px;
+     
+}
+
+#icn2 {
+margin-top: 8px;
+size: 14px;
+cursor: pointer;
+
+}
+   
+#navbar2 {
+display: flex;
+justify-content: space-around;
+width:800px;
+gap: 30px;
+margin-bottom:10px;
+margin-top:5px;
+font-size: 20px;
+
+}
+
+#query  {
+
+
+display:flex;
+width:300px;
+gap: 10px;
+border: 1px solid rgb(168, 168, 168);
+border-radius: 5px;
+
+
+}
+
+#query > div > i  {
+
+margin-left: 8px; 
+margin-top: 8px;
+margin-bottom: 5px;
+
+font-size: 14px;
+
+}
+
+#query > div >  input {
+
+width:250px;
+background-color: #0f0617;
+border:none;
+/* padding-top: 4px; */
+
+}
+
+#query  ::placeholder {
+
+font-weight: 200;
+font-size: 11px ;
+
+}
+
+#login {
+/* border:1px solid white; */
+border-radius: 5px;
+font-weight: 700;
+font-size: 18px;
+padding: 8px 1px 1px 1px;
+cursor: pointer;
+       
+}
+
+#buy {
+border-radius: 5px;
+font-weight: 700;
+font-size: 12px;
+background-color: #8230c6;
+padding: 10px 8px 10px 8px;
+cursor: pointer;
+
+}
+
+/* #login:hover{
+
+color: black;
+background-color: #fff;
+
+} */
+
+#buy:hover {
+
+background-color: #5c1c91;
+
+} 
+
+
+
+#nav-menu2 {
+margin-top: 5px;
+}
+
+
+#lang {
+
+margin-top: 8px;
+cursor:pointer;
+
+}
+
+
+
+.list-choice-objects input[type="radio"] {
+position:relative;
+left:-9999px;
+border-radius: 5px;
+
+}
+
+.list-choice-objects1 input[type="radio"] {
+position:relative;
+left:-9999px; 
+border-radius: 5px;
+
+}
+
+.list-choice-title {
+
+display: inline-block;
+position: relative;
+background:none;
+text-align: left;
+padding: 0px 10px 0px 10px;
+color:white;
+text-shadow: none ;
+box-sizing: border-box solid;
+cursor: pointer;
+
+}
+
+.list-choice-objects input[type="radio"] + span {
+color: white;
+padding: 0px 5px 0px 5px;
+display:grid;
+text-align: left;
+cursor: pointer;
+margin-left: 20px;
+margin-right: 10px;
+font-size:12px;
+box-sizing: border-box solid;
+background-color: #0f0617;
+
+
+}
+
+
+.list-choice-objects1 input[type="radio"] + span {
+color: white;
+width:200px;
+padding: 0px 5px 0px 5px;
+display: grid;
+text-align:  left;
+cursor: pointer;
+margin-top: -10px;
+margin-left: 20px;
+margin-right: 10px;
+box-sizing: border-box solid;
+background-color: #0f0617;
+
+}
+
+.list-choice-objects {
+display:flex; 
+position:absolute;
+font-weight: 100;
+overflow:hidden;
+max-height: 0;
+transition: all 250ms ease;
+box-sizing: border-box solid;
+background-color: #0f0617;
+
+}
+
+
+.list-choice-objects1 {
+display:grid;
+position:absolute;
+font-size:12px;
+font-weight: 600;
+overflow:hidden;
+max-height: 0;
+transition: all 250ms ease-in-out;
+box-sizing: border-box solid;
+background-color: #0f0617;
+
+}
+
+.drop {
+display:grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: auto;
+gap:5px;
+margin:25px 25px 25px 25px;
+
+   
+}
+
+.drop > img{
+
+border-radius: 5px;
+height:100px;
+width:164px;
+cursor: pointer;
+
+}
+
+
+.list-choice-title:hover {
+color: #fff;
+border-bottom: 4px solid #fff;
+
+}
+
+
+.list-choice:hover .list-choice-objects  input[type="radio"] + span {
+
+transition: all 250ms ease-in-out;
+
+}
+
+
+.list-choice:hover .list-choice-objects1  input[type="radio"] + span {
+
+transition: all 250ms ease-in-out;
+
+}
+
+.list-choice-objects input[type="radio"] + span:hover {
+background:#372a42;
+border-radius: 5px 5px 5px 5px;
+position: relative;
+
+}
+
+.list-choice-objects1 input[type="radio"] + span:hover {
+background:#372a42;
+border-radius: 5px 5px 5px 5px;
+
+
+}
+
+.list-choice:hover input[type="radio"]:checked + span:hover {
+background-color:#0f0617;
+position: relative;
+
+}
+
+.list-choice input[type="radio"]:checked + span {
+background-color: #0f0617;
+
+
+}
+
+
+.list-choice:hover .list-choice-objects {
+max-height: 540px;
+border: 1px solid #372a42;
+
+}
+
+
+.list-choice:hover .list-choice-objects1 {
+max-height: 600px;
+border: 1px solid #372a42;
+
+}
