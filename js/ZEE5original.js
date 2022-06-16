@@ -1,7 +1,7 @@
 var moviesData=[
     {
-        img_url:"https://akamaividz2.zee5.com/image/upload/w_321,h_482,c_scale,f_webp,q_auto:eco,dpr_2.0/resources/0-6-4z587408/portrait/1920x770bb666424b608474e863f5bdfa0d4fec5.jpg",
-        name:"Mithya",
+        img_url:"https://akamaividz2.zee5.com/image/upload/w_231,h_347,c_scale,f_webp,q_auto:eco/resources/0-6-1298/portrait/1920x770d9ead07e5b304a989d85cf8c6e0113fb.jpg",
+        name:"Abhay 3",
         cat: "Action"
     },
     
