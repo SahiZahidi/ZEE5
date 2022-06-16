@@ -20,7 +20,7 @@ function displayWebseries(moviesArr) {
         
         var tex_bottom = document.createElement('div');
         tex_bottom.classList.add('text_bottom');
-        tex_bottom.innerHTML = ` <a href="watch.html"><i class="fa-solid fa-play"></i> Watch</a> 
+        tex_bottom.innerHTML = ` <a href="watch3.html"><i class="fa-solid fa-play"></i> Watch</a> 
         <p><i class="fa-solid fa-share-nodes"></i> Share</p>`;
 
         text.append(moviename,tex_bottom);
