@@ -8,11 +8,11 @@
     <!-- <link rel="preload" href="/fonts/glyph/Icons_InitialLoad.woff2?version=2.51.65" as="font" type="font/woff2" crossorigin="">
     <link rel="preload" href="/fonts/glyph/Icons_Other.woff2?version=2.51.65" as="font" type="font/woff2" crossorigin=""> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="https://kit.fontawesome.com/861512847d.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/03120bbf35.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"crossorigin="anonymous"></script>
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" 
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
 
@@ -26,8 +26,10 @@
         color: #fff;
     
 }
-a{
+
+a {
     text-decoration: none;
+    /* color:#fff; */
 }
 
 #topmost {
@@ -65,7 +67,7 @@ gap:15px;
       
 }
 
-#navbar1 > a{
+#navbar1 > a {
     text-decoration: none;
     color: #fff;
 
@@ -88,6 +90,11 @@ font-size: 20px;
 
 }
 
+#navbar2 > a {
+    text-decoration: none;
+    color: #fff;
+
+}
 #query  {
 
 
@@ -196,7 +203,7 @@ position: relative;
 background:none;
 text-align: left;
 padding: 0px 10px 0px 10px;
-color:rgb(229, 229, 229);
+color:white;
 text-shadow: none ;
 box-sizing: border-box solid;
 cursor: pointer;
@@ -204,7 +211,7 @@ cursor: pointer;
 }
 
 .list-choice-objects input[type="radio"] + span {
-color: rgb(255, 255, 255);
+color: #c9c9c9;
 padding: 0px 5px 0px 5px;
 display:grid;
 text-align: left;
@@ -220,7 +227,7 @@ background-color: #0f0617;
 
 
 .list-choice-objects1 input[type="radio"] + span {
-color: rgb(255, 255, 255);
+color: #c9c9c9;
 width:200px;
 padding: 0px 5px 0px 5px;
 display: grid;
@@ -633,9 +640,9 @@ a{
 }
 
 }
-
+/* --------------------footer-------------------------------------------------- */
 #footer{
-    height: auto;
+
     background-color: #0f0617;
     font-size: 12px;
     width: 100%;
@@ -656,6 +663,7 @@ a{
 
 
 .row{
+    width: 80%;
     display: flex;
      flex-wrap: wrap; 
     margin: auto;
@@ -934,34 +942,7 @@ footer h4{
                     <input type="radio"/>
                     <span>Around the Globe</span>
                  </label>
-                 <label>
-                    <input type="radio"/>
-                    <span>Around the Globe</span>
-                 </label>
-                 <label>
-                    <input type="radio"/>
-                    <span>Around the Globe</span>
-                 </label>
-                 <label>
-                    <input type="radio"/>
-                    <span>Around the Globe</span>
-                 </label>
-                 <label>
-                    <input type="radio"/>
-                    <span>Around the Globe</span>
-                 </label>
-                 <label>
-                    <input type="radio"/>
-                    <span>Around the Globe</span>
-                 </label>
-                 <label>
-                    <input type="radio"/>
-                    <span>Around the Globe</span>
-                 </label>
-                 <label>
-                    <input type="radio"/>
-                    <span>Around the Globe</span>
-                 </label>
+       
                 </div>
                 <div class="drop">
                     <img src="https://akamaividz2.zee5.com/image/upload/w_264,h_149,c_scale,f_webp,q_auto:eco/resources/0-9-aajtak/list/aajtak1170c5f0b30a23f8405f9e4e05691ee3e6f2.jpg">
@@ -1097,7 +1078,7 @@ footer h4{
        </div>
        </div>
     </div>
-    
+    <div>
     <div class="carosel">
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -1138,6 +1119,7 @@ footer h4{
             </button>
         </div>
     </div> 
+</div>
     <div class="movie-list-wrapper">
         <div class="container">
         <div class="top_heading">
@@ -1154,7 +1136,7 @@ footer h4{
         <div class="text">
         <p>The Broken News</p>
         <div class="text_bottom">
-        <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
+        <a href="./watch2.html"><i class="fa-solid fa-play"></i>Watch</a>
         <p><i class="fa-solid fa-share-nodes"></i>Share</p>
         </div>
         </div>
