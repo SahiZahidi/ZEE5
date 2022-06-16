@@ -15,7 +15,7 @@
 
     <style>
       button{
-          background-color: purple;
+          background-color: #8230c6;
           border: none;
           color: white;
           padding: 12px 32px;
@@ -44,9 +44,9 @@
   </style>
 </head>
 <body>
-  <a class="cross" href="./index.html"><i class="fa-solid fa-xmark"></i></a>
+  <a  class="cross" href="./index.html"><i style="font-size: 10px;"class="fa-solid fa-xmark"></i></a>
     <div id="box">
-        <h1>Create a new Account</h1>
+        <h4 style="color:white;">Create a new Account</h4>
         <p>Create an account to continue enjoying uninterrupted video and personalised experience</p>
        
        <a href="https://accounts.google.com/o/oauth2/auth?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.zee5.com%3Fid%3Dauth949064&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm=&include_granted_scopes=true&client_id=171585693881-93jei1bqpoaejkq5ha63iemuq8bbmoar.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.zee5.com&fetch_basic_profile=true&gsiwebsdk=2"> <img src="https://www.zee5.com/images/google-social-icon-circle.svg?ver=2.50.94" alt="">
@@ -60,7 +60,7 @@
     <div class="line"></div>
 <br>
 
-    <input type="password" id="pass" name="Password" placeholder="Enter Password" required >
+    <input type="password" id="pass" name="Password" placeholder="Enter Password (Min 8 characters)" required >
 
     <div class="line"></div>
     <div class="line"></div>
@@ -89,6 +89,7 @@ var signupArr =JSON.parse(localStorage.getItem("signUpDatails")) || [];
     var pass2 = document.querySelector("#pass2").value;
     if(signupObj.pass==pass2 && signupObj.pass.length>=8 &&  signupObj.pass !== "" && signupObj.email !== ""){
       signupArr.push(signupObj);
+      alert("Signin Successful [ Please Login With your Credentials ] ")
     console.log(signupArr);
     localStorage.setItem("signUpDetails", JSON.stringify(signupArr));
     window.location.href="Login.html"
