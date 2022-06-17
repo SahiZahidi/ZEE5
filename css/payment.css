@@ -1,87 +1,279 @@
-.payment{
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    position: relative;
-    top: 0;
-    left: 0;
 
-}
-.topLogo img{
-    margin-top: 30px;
-    margin-left: 30px;
-}
-
-.paymentBox{
-    position: absolute;
-    left: 150px;
-    background-color: white;
-    width: 70%;
-    height: 580px;
-    padding: 2%;
-}
-
-#cardHead{
-    font-size: 20px;
-    font-weight: 400;
+        
+        #head {
+            padding-top: 20px;
+            height: 70px;
+            width: 100%;
+                    
+            background: #0f0617;
+                   } 
+        
+                * {
+                    margin: 0;
+                   padding: 0;
+                    
+                }
+        
+            #midhead {
+            display:flex;
+            height: 60px;
+            width:100%; 
+            margin: auto;
+            margin-top:0px;
+            justify-content: space-around;
+            
+        }
+        
+           #midhead  div {
+         display:flex;
+         height: 80%;
+         width: 30%;
+         justify-content: space-around;
+         
+        
+         }
+        #logo>a{
+            margin: auto;
+        }
+        
+         #logo img {
+             margin: auto;
+            height: 20px;
+            padding: 30;
+            
+            
+        } 
+        
+        ul {
+            display: flex; 
+             justify-content: space-around; 
+            list-style-type:none;
+            margin: auto;
+        
+          
+        }
+           #shopingStep li {
+    display: inline-block;
+    font-size: 14px;
     text-align: center;
-    margin-top: 20px;
-}
-#details{
-    margin: auto;
-    width: 60%;
-    padding: 5%;
-    line-height: 2;
-}
-
-#details #form{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: auto;
+    text-decoration: none;
     
 }
-#details #form input{
-    border: none;
-    border-bottom: 1px solid #ccc;
-    padding: 2% 0;
-    margin-bottom: 2%;
-    font-size: 18px;
-}
-input:focus{
-    outline: none;
+  
+#shopingStep li a{
+    color: #adadad;
+    padding: 10px 20px; 
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    
+    
+
 }
 
-button{
-    width: 80%;
+#secureBox{
+    
+    font-size: 14px;
+    float: right;
+    color: #adadad;
+    line-height: 30px;
+    
+}
+#secureBox li{
+    text-align: center;
     margin: auto;
-    padding: 2%;
-    font-size: 20px;
-    background: #00bcd4;
+}
+                                        /* below header   */
+
+.headtwo{
+    /* border: 1px solid brown; */
+    width: 50%;
+    margin: auto;
+    display: grid;
+    justify-content: left;
+    /* padding-right: 200px; */
+    padding-left: 85px;
+    color: #999797;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.bigcontainer{
+    width: 50%;
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+   
+
+}
+.bigone{
+border: 1px solid #ccc;
+}
+.bigone div{
+    border: 1px solid #ccc;
+    /* margin: 10px; */
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+.bigtwo{
+border: 1px solid #ccc;
+width: 450px;
+}
+.top{
+    width: 100%;
+    /* border: 1px solid seagreen; */
+
+}
+/* .bigthree{ */
+/* border: 1px solid blueviolet; */
+
+/* } */
+.bigtwo>.top>h4{
+    /* padding-right: 40px; */
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(172, 167, 167);
+}
+
+.input{
+/* border: 1px solid teal; */
+padding: 5px;
+margin-top: 20px;
+}
+.input input{
+    width: 80%;
+    margin-left: 30px;
+    padding: 5px;
+
+}
+
+.input input::placeholder{
+    font-size: 17px;
+}
+
+.threeinput{
+    width: 80%;
+    margin: 20px 20px 0 30px;
+    /* border: 1px solid purple; */
+    padding: 5px;
+}
+.threeinput input{
+    width: 15%;
+    height: 30px;
+    margin-right: 30px;
+}
+/* .threeinput svg{
+    padding: 10px;
+} */
+
+.btn{
+    background-color:#8a60ff;
+    color: white;
+    width: 200px;
+    height: 40px;
+    margin-left: 30px;
     border: none;
-    color: #fff;
-    border-radius: 10px;
+    padding: 8px 5px 8px 8px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+.btn a{
+    color: #f4f4f4;
+    font-size: 14px;
+    text-decoration: none;
+}
+/* .bottomtwo{ */
+    /* border: 1px solid brown; */
+/* } */
+.safe div{
+    display: flex;
+    /* border: 1px solid springgreen; */
+    justify-content: space-between;
+}
+.safe div div p{
+    font-size: 12px;
+    color: rgb(146, 145, 145);
+}
+.img img{
+    width: 450px;
+    margin-top: 5px;
+}
+.secondbottom{
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+#foot{
+    display: flex;
+    justify-content: space-around;
+    color: #413f3f;
 }
 
-::placeholder{
-    color: #b36916;
+
+body {
+    font-family: 'NotoSansRegular', sans-serif;
+    font-size: 12px;
+    color: #000;
 }
 
-@media only screen and (max-width: 400px){
-    .paymentBox{
-        position: absolute;
-        left: 20px;
-        width: 90%;
-        border-radius: 10px;
-        margin-top: 15px;
-    }
-    #details #form{
-     
-        width: 100%;
-        margin: auto;
-        
-    }
-    button{
-        width: 100%;
-    }
-    }
+.fa, .fa-brands, .fa-duotone, .fa-light, .fa-regular, .fa-solid, .fa-thin, .fab, .fad, .fal, .far, .fas, .fat {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display,inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+
+
+element.style {
+    width: 100%;
+    box-sizing: border-box;
+}
+:host, :root {
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+}
+
+
+:host, :root {
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+}
+
+:host, :root {
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+
+#foot{
+    color: hsla(0,0%,100%,.5);
+    font-size: 12px;
+      font-weight: 400;
+       width: 100%;
+       height: 50px;
+       display: flex;
+       margin-top: 60px;
+       background: #0f0617;
+       justify-content: space-between;
+       margin-bottom: -10px;
+       box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+   }
+   #foot > div:first-child {
+   
+text-align: left;
+padding: 15px;
+    
+   }
+#foot > div:last-child {
+    display: flex;
+    justify-content: space-between;  
+    
+}
+#foot > div > div {
+   margin-top: 2.5px;
+    text-align: center;
+    padding: 15px;
+}
