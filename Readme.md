@@ -1,6 +1,8 @@
 # ZEE5.COM (CLONE)
 This is an online entertainment website for the users to watch latest movies, series, tv shows, news and many more, It also have an exclusive premium contents for its subscribers only. You can watch, download and share the contents too. 
 
+https://dazzling-cajeta-241e8e.netlify.app/ (Link to Zee5 Clone)
+
 ## Acknowledgements
 
  - I would like to express my special thanks of gratitude to Masai school  as well as our mentor (Swanand Sir and Aditya sir )who gave me the golden opportunity to do this wonderful project, which also helped me in doing a lot of Research and i came to know about so many new things I am really thankful to them.
